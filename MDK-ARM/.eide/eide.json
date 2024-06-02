@@ -1,0 +1,886 @@
+{
+  "name": "atic2",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "Application",
+        "files": [],
+        "folders": [
+          {
+            "name": "MDK-ARM",
+            "files": [
+              {
+                "path": "startup_stm32u575xx.s"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "User",
+            "files": [],
+            "folders": [
+              {
+                "name": "Core",
+                "files": [
+                  {
+                    "path": "../Core/Src/adc.c"
+                  },
+                  {
+                    "path": "../Core/Src/app_freertos.c"
+                  },
+                  {
+                    "path": "../Core/Src/crc.c"
+                  },
+                  {
+                    "path": "../Core/Src/dma2d.c"
+                  },
+                  {
+                    "path": "../Core/Src/gpdma.c"
+                  },
+                  {
+                    "path": "../Core/Src/gpio.c"
+                  },
+                  {
+                    "path": "../Core/Src/i2c.c"
+                  },
+                  {
+                    "path": "../Core/Src/icache.c"
+                  },
+                  {
+                    "path": "../Core/Src/main.c"
+                  },
+                  {
+                    "path": "../Core/Src/memorymap.c"
+                  },
+                  {
+                    "path": "../Core/Src/rtc.c"
+                  },
+                  {
+                    "path": "../Core/Src/spi.c"
+                  },
+                  {
+                    "path": "../Core/Src/stm32u5xx_hal_msp.c"
+                  },
+                  {
+                    "path": "../Core/Src/stm32u5xx_hal_timebase_tim.c"
+                  },
+                  {
+                    "path": "../Core/Src/stm32u5xx_it.c"
+                  },
+                  {
+                    "path": "../Core/Src/tim.c"
+                  },
+                  {
+                    "path": "../Core/Src/usart.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "TouchGFX",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "../TouchGFX/App/app_touchgfx.c"
+                      }
+                    ],
+                    "folders": []
+                  },
+                  {
+                    "name": "target",
+                    "files": [
+                      {
+                        "path": "../TouchGFX/target/TouchGFXHAL.cpp"
+                      },
+                      {
+                        "path": "../TouchGFX/target/STM32TouchController.cpp"
+                      },
+                      {
+                        "path": "../TouchGFX/target/TouchGFXGPIO.cpp"
+                      }
+                    ],
+                    "folders": [
+                      {
+                        "name": "generated",
+                        "files": [
+                          {
+                            "path": "../TouchGFX/target/generated/TouchGFXConfiguration.cpp"
+                          },
+                          {
+                            "path": "../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp"
+                          },
+                          {
+                            "path": "../TouchGFX/target/generated/STM32DMA.cpp"
+                          },
+                          {
+                            "path": "../TouchGFX/target/generated/OSWrappers.cpp"
+                          }
+                        ],
+                        "folders": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "BSP",
+        "files": [
+          {
+            "path": "../BSP/hal_HardCore/Inc/CST816T.h"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Inc/FUNTION_IMAGE.H"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Inc/LCD_font.h"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Inc/OLED_Font.h"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Inc/OLED.H"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Inc/st7789v.h"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Src/cst816.c"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Src/funtion_image.c"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Src/oled.c"
+          },
+          {
+            "path": "../BSP/hal_HardCore/Src/st7789v.c"
+          },
+          {
+            "path": "../BSP/picture/Inc/MyHead.h"
+          },
+          {
+            "path": "../BSP/picture/Src/MyHead.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32U5xx_HAL_Driver",
+            "files": [
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_adc.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_adc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_dma.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_dma_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_i2c.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_i2c_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rcc.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_cortex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_flash.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_flash_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_gpio.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_exti.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_pwr.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_pwr_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_gtzc.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_icache.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_crc.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_crc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_dma2d.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rtc.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rtc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_tim.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_tim_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_uart.c"
+              },
+              {
+                "path": "../Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_uart_ex.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "CMSIS",
+            "files": [
+              {
+                "path": "../Core/Src/system_stm32u5xx.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "generated",
+        "files": [
+          {
+            "path": "../touchgfx/generated/fonts/src/applicationfontprovider.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/cachedfont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/fontcache.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/generatedfont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/unmappeddatafont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/vectorfontrendererbuffers.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/gui_generated/src/common/frontendapplicationbase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/gui_generated/src/screen1_screen/screen1viewbase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_textures_seamless_texture_2.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_backgrounds_small_glossy_gradient.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_active.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_pressed.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_active.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_off_light.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_on_action.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/bitmapdatabase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/svgdatabase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/languagegb.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/texts.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/typedtextdatabase.cpp"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "gui",
+        "files": [
+          {
+            "path": "../touchgfx/gui/src/common/frontendapplication.cpp"
+          },
+          {
+            "path": "../touchgfx/gui/src/model/model.cpp"
+          },
+          {
+            "path": "../touchgfx/gui/src/screen1_screen/screen1presenter.cpp"
+          },
+          {
+            "path": "../touchgfx/gui/src/screen1_screen/screen1view.cpp"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Lib",
+        "files": [
+          {
+            "path": "../middlewares/st/touchgfx/lib/core/cortex_m33/Keil6.x/touchgfx_core_wchar16.lib"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Middlewares",
+        "files": [],
+        "folders": [
+          {
+            "name": "RTOS2",
+            "files": [],
+            "folders": [
+              {
+                "name": "CMSIS",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "RTOS2",
+                    "files": [],
+                    "folders": [
+                      {
+                        "name": "Core",
+                        "files": [],
+                        "folders": [
+                          {
+                            "name": "TZ_Non_Supported",
+                            "files": [
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/list.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/queue.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/timers.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c"
+                              },
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c"
+                              }
+                            ],
+                            "folders": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Heap",
+                        "files": [],
+                        "folders": [
+                          {
+                            "name": "Heap_4",
+                            "files": [
+                              {
+                                "path": "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c"
+                              }
+                            ],
+                            "folders": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "e9dc92f928741d755d037c79e699f948"
+  },
+  "targets": {
+    "2.Queue_Set": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M33.Dsp",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0xc0000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x200000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32u5x",
+        "interface": "stlink",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x8000000",
+          "elFile": "None",
+          "optionBytes": ".eide/2.queue_set.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Core/Inc",
+          "../Drivers/STM32U5xx_HAL_Driver/Inc",
+          "../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy",
+          "../Drivers/CMSIS/Device/ST/STM32U5xx/Include",
+          "../Drivers/CMSIS/Include",
+          "../Middlewares/Third_Party/FreeRTOS/Source/include",
+          "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure",
+          "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "../Middlewares/Third_Party/CMSIS/RTOS2/Include",
+          "../BSP/hal_HardCore/Inc",
+          "../BSP/picture/Inc",
+          "../TouchGFX/App",
+          "../TouchGFX/target/generated",
+          "../TouchGFX/target",
+          "../middlewares/st/touchgfx/framework/include",
+          "../touchgfx/generated/fonts/include",
+          "../touchgfx/generated/gui_generated/include",
+          "../touchgfx/generated/images/include",
+          "../touchgfx/generated/texts/include",
+          "../touchgfx/generated/videos/include",
+          "../touchgfx/gui/include",
+          "RTE/_2.Queue_Set"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32U575xx"
+        ]
+      }
+    },
+    "atic2": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M33.Dsp",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0xc0000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x200000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32u5x",
+        "interface": "stlink",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x8000000",
+          "elFile": "None",
+          "optionBytes": ".eide/2.queue_set.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Core/Inc",
+          "../Drivers/STM32U5xx_HAL_Driver/Inc",
+          "../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy",
+          "../Drivers/CMSIS/Device/ST/STM32U5xx/Include",
+          "../Drivers/CMSIS/Include",
+          "../Middlewares/Third_Party/FreeRTOS/Source/include",
+          "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure",
+          "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "../Middlewares/Third_Party/CMSIS/RTOS2/Include",
+          "../BSP/hal_HardCore/Inc",
+          "../BSP/picture/Inc",
+          "../TouchGFX/App",
+          "../TouchGFX/target/generated",
+          "../TouchGFX/target",
+          "../middlewares/st/touchgfx/framework/include",
+          "../touchgfx/generated/fonts/include",
+          "../touchgfx/generated/gui_generated/include",
+          "../touchgfx/generated/images/include",
+          "../touchgfx/generated/texts/include",
+          "../touchgfx/generated/videos/include",
+          "../touchgfx/gui/include",
+          "RTE/_atic2"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32U575xx"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}

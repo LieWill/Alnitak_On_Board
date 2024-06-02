@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "Alnitak_On_Board",
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "cortex-debug.armToolchainPath": "C:\\USERS\\廖唯一\\.EIDE\\TOOLS\\GCC_ARM\\BIN",
+        "cortex-debug.openocdPath": "C:\\USERS\\廖唯一\\.EIDE\\TOOLS\\OPENOCD_7A1ADFBEC_MINGW32\\BIN\\OPENOCD.EXE"
+    },
+    "extensions": {}
+}

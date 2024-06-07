@@ -1,21 +1,30 @@
 
 {
   "Application": {
-    "Name": "2.Queue_Set",
+    "Name": "atic2",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":
     {
       "16": "LCD16bpp"
     },
-    "AvailableResolutions" : [
+    "AvailableResolutions": [
       {
         "Width": 240,
         "Height": 280
       }
     ],
-    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../2.Queue_Set.ioc --platform=",
-    "Family" : "STM32U5"
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Platform": "m33",
+    "Toolchain": "MDK-ARM V5.32",
+    "ProjectFile": "../atic2.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [
+    ],
+    "AdditionalFeatures": [
+    ]
   },
-  "Version": "4.15.0"
+  "Version": "4.23.2"
 }

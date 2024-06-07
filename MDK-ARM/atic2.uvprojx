@@ -906,14 +906,14 @@
               <FilePath>../touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_textures_seamless_texture_2.cpp</FileName>
+              <FileName>image_alternate_theme_images_backgrounds_240x240_poly.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_textures_seamless_texture_2.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_backgrounds_240x240_poly.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_analogclock_backgrounds_small_glossy_gradient.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_analogclock_backgrounds_small_plain_dark.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_backgrounds_small_glossy_gradient.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_backgrounds_small_plain_dark.cpp</FilePath>
             </File>
             <File>
               <FileName>image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp</FileName>
@@ -931,44 +931,84 @@
               <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_active.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_circleprogress_backgrounds_large.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_active.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_circleprogress_backgrounds_large.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_pressed.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_pressed.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small_action.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small_action.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_togglebutton_medium_round_small_off_light.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_small_off_light.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_active.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_togglebutton_medium_round_small_on_active.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_active.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_small_on_active.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.cpp</FileName>
+              <FileName>image_bluetooth.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/image_bluetooth.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_togglebutton_large_round_off_light.cpp</FileName>
+              <FileName>image_heartbreaking.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_off_light.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/image_heartbreaking.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_togglebutton_large_round_on_action.cpp</FileName>
+              <FileName>image_heartbreaking_pressed.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_on_action.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/image_heartbreaking_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_heartrate.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_heartrate.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_scroll1.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_scroll1.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_scroll2.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_scroll2.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_slider_empty.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_slider_empty.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_slider_full.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_slider_full.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_slider_handle.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_slider_handle.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_sport_small.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_sport_small.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_weather.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_weather.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdana_10_4bpp.cpp</FileName>

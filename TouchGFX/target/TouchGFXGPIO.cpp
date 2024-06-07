@@ -1,6 +1,11 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * File Name          : TouchGFXGPIO.cpp
+  ******************************************************************************
+  * This file was created by TouchGFX Generator 4.23.2. This file is only
+  * generated once! Delete this file from your project and re-generate code
+  * using STM32CubeMX or change this file manually to update it.
   ******************************************************************************
   * @attention
   *
@@ -13,16 +18,21 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 
 #include <touchgfx/hal/GPIO.hpp>
 
 /**
- * GPIO_ID Enum, these are used bt TouchGFX framework to signal events.
+ * GPIO_ID Enum
+ * The signals represented by this enum are used by TouchGFX framework to signal internal events.
  *
  * VSYNC_FREQ,  /// Pin is toggled at each VSYNC
  * RENDER_TIME, /// Pin is high when frame rendering begins, low when finished
  * FRAME_RATE,  /// Pin is toggled when the frame buffers are swapped.
  * MCU_ACTIVE   /// Pin is high when framework is utilizing the MCU.
+ *
+ * Configure GPIO's with the same name as the GPIO_IDs above, as output, in CubeMX to export
+ * the signals for performance measuring. See support.touchgfx.com for further details.
  *
  */
 

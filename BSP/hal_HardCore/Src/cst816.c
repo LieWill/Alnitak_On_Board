@@ -35,7 +35,7 @@ brak:
     *X = (uint16_t)((data[2] & 0x0F) << 8) | data[3];
     *Y = (uint16_t)((data[4] & 0x0F) << 8) | data[5];
     *X = *X / 11.0 * 12 - 5;
-    *Y = *Y / 25.0 * 28;
+    *Y = *Y / 25.0 * 29 - 10;
     if (*X > 250 || *Y > 300)
     {
         HAL_GPIO_WritePin(T_RST_GPIO_Port, T_RST_Pin, GPIO_PIN_RESET);

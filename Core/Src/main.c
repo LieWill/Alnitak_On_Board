@@ -119,33 +119,26 @@ int main(void)
   MX_DMA2D_Init();
   MX_TIM1_Init();
   MX_CRC_Init();
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
   MX_TouchGFX_Init();
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
+  /* Call PreOsInit function */
+  // MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
   OLED_Init();
   OLED_Printf(1, 1, "Hello!");
   LCD_init(0);
-  LCD_drawImage(gImage_MyHead, 0, 0, 240, 240);
-  // CST816T_Init();
-  // uint16_t x = 0, y = 0;
-  // int touch = 0;
-  // uint8_t power = 0, Freg = 0, per = 0;
-  // CST816T_ReceiveByte(0xF6, &power);
-  // CST816T_ReceiveByte(0xF7, &Freg);
-  // CST816T_ReceiveByte(0xEE, &per);
-  // OLED_Printf(1, 1, "per:%d", per);
-  // OLED_Printf(2, 1, "power:%d", power);
-  // OLED_Printf(3, 1, "Freg:%d", Freg);
-  // while (1)
-  // {
-  //   if (CST816_GetAction(&x, &y))
+  // LCD_drawImage(gImage_MyHead, 0, 0, 240, 240);
+  //  CST816T_Init();
+  //   uint16_t x = 0, y = 0;
+  //   int touch = 0;
+  //   while (1)
   //   {
-  //     if (touch == 0)
+  //     if (CST816_GetAction(&x, &y))
   //     {
-  //       OLED_Clear();
-  //       touch = 1;
-  //     }
+  //       if (touch == 0)
+  //       {
+  //         OLED_Clear();
+  //         touch = 1;
+  //       }
 
   //     OLED_Printf(1, 1, "x:%d y:%d  ", x, y);
   //   }
@@ -158,7 +151,7 @@ int main(void)
   //     }
   //     OLED_Printf(1, 1, "NO TOUCH");
   //   }
-  //   HAL_Delay(10);
+  //   //HAL_Delay(10);
   // }
   /* USER CODE END 2 */
 

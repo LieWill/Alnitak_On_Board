@@ -2,6 +2,10 @@
   ******************************************************************************
   * File Name          : app_touchgfx.c
   ******************************************************************************
+  * This file was created by TouchGFX Generator 4.23.2. This file is only
+  * generated once! Delete this file from your project and re-generate code
+  * using STM32CubeMX or change this file manually to update it.
+  ******************************************************************************
   * @attention
   *
   * Copyright (c) 2024 STMicroelectronics.
@@ -14,18 +18,48 @@
   ******************************************************************************
   */
 
+/* Includes ------------------------------------------------------------------*/
 #include "app_touchgfx.h"
 
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Private define ------------------------------------------------------------*/
+
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE BEGIN PV */
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
 void touchgfx_init(void);
+void touchgfx_components_init(void);
 void touchgfx_taskEntry(void);
+
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
 
 /**
  * Initialize TouchGFX application
  */
 void MX_TouchGFX_Init(void)
 {
-  // Calling farward to touchgfx_init in C++ domain
-  touchgfx_init();
+    // Calling forward to touchgfx_init in C++ domain
+    touchgfx_components_init();
+    touchgfx_init();
 }
 
 /**
@@ -33,17 +67,8 @@ void MX_TouchGFX_Init(void)
  */
 void MX_TouchGFX_Process(void)
 {
-  // Calling farward to touchgfx_init in C++ domain
-  touchgfx_taskEntry();
-}
-
-/**
- * TouchGFX application thread
- */
-void TouchGFX_Task(void *argument)
-{
-  // Calling farward to touchgfx_init in C++ domain
-  touchgfx_taskEntry();
+    // Calling forward to touchgfx_taskEntry in C++ domain
+    touchgfx_taskEntry();
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

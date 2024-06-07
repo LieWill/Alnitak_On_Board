@@ -60,7 +60,7 @@ extern const touchgfx::TypedText::TypedTextData* const typedTextDatabaseArray[];
 
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::Unicode::UnicodeChar texts_all_languages[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    0x41, 0x0 // @0 "A"
+    0 // No texts in application
 };
 
 TEXT_LOCATION_FLASH_PRAGMA

@@ -8,18 +8,16 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/containers/ScrollableContainer.hpp>
-#include <touchgfx/containers/SlideMenu.hpp>
-#include <touchgfx/widgets/TiledImage.hpp>
-#include <touchgfx/widgets/RadioButton.hpp>
-#include <touchgfx/widgets/RadioButtonGroup.hpp>
+#include <touchgfx/containers/SwipeContainer.hpp>
+#include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/clock/AnalogClock.hpp>
-#include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/EasingEquations.hpp>
-#include <touchgfx/mixins/MoveAnimator.hpp>
+#include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
+#include <touchgfx/containers/SlideMenu.hpp>
+#include <touchgfx/containers/Slider.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/containers/progress_indicators/CircleProgress.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -27,6 +25,15 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase();
     virtual void setupScreen();
+
+    /*
+     * Custom Actions
+     */
+    virtual void action1()
+    {
+        // Override and implement this function in Screen1
+    }
+    
 
 protected:
     FrontendApplication& application() {
@@ -37,18 +44,29 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::ScrollableContainer scrollableContainer1;
-    touchgfx::SlideMenu slideMenu1;
-    touchgfx::TiledImage tiledImage1;
-    touchgfx::RadioButtonGroup<1> radioButtonGroup1;
-    touchgfx::RadioButton radioButton1;
+    touchgfx::SwipeContainer swipeContainer1;
+    touchgfx::Container swipeContainer1Page2;
+    touchgfx::Image heart;
+    touchgfx::Container swipeContainer1Page1;
     touchgfx::AnalogClock analogClock1;
-    touchgfx::BoxWithBorder boxWithBorder1;
-    touchgfx::MoveAnimator< touchgfx::BoxWithBorderButtonStyle< touchgfx::TouchButtonTrigger >  > flexButton1;
+    touchgfx::ImageProgress baretey;
+    touchgfx::SlideMenu bluetoothMenu;
+    touchgfx::Slider slider1;
     touchgfx::ToggleButton toggleButton1;
-    touchgfx::ButtonWithLabel buttonWithLabel1;
+    touchgfx::Container swipeContainer1Page3;
+    touchgfx::Image sport;
+    touchgfx::CircleProgress circleProgress1;
+    touchgfx::PainterRGB565 circleProgress1Painter;
+    touchgfx::Container swipeContainer1Page4;
+    touchgfx::Image weather;
 
 private:
+
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint32_t CANVAS_BUFFER_SIZE = 3600;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 

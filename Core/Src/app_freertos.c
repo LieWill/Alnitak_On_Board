@@ -27,6 +27,7 @@
 #include "CST816T.h"
 #include "st7789v.h"
 #include "OLED.h"
+#include "rtc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,9 +52,10 @@
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
-    .name = "defaultTask",
-    .priority = (osPriority_t)osPriorityNormal,
-    .stack_size = 1024 * 4};
+  .name = "defaultTask",
+  .priority = (osPriority_t) osPriorityNormal,
+  .stack_size = 1024 * 6
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -61,12 +63,11 @@ void OLED_ShowTouch(void *arg);
 /* USER CODE END FunctionPrototypes */
 
 /**
- * @brief  FreeRTOS initialization
- * @param  None
- * @retval None
- */
-void MX_FREERTOS_Init(void)
-{
+  * @brief  FreeRTOS initialization
+  * @param  None
+  * @retval None
+  */
+void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -96,6 +97,7 @@ void MX_FREERTOS_Init(void)
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
+
 }
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
@@ -112,6 +114,7 @@ void StartDefaultTask(void *argument)
   OLED_Printf(1, 1, "Hello!");
   LCD_init(0);
   HAL_TIM_Base_Start_IT(&htim1);
+  // setTime24Hour(3, 2, 10);
   for (;;)
   {
     MX_TouchGFX_Process();
@@ -149,3 +152,4 @@ void OLED_ShowTouch(void *arg)
   }
 }
 /* USER CODE END Application */
+

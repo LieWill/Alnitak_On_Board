@@ -1,6 +1,11 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * File Name          : STM32TouchController.cpp
+  ******************************************************************************
+  * This file was created by TouchGFX Generator 4.23.2. This file is only
+  * generated once! Delete this file from your project and re-generate code
+  * using STM32CubeMX or change this file manually to update it.
   ******************************************************************************
   * @attention
   *
@@ -13,6 +18,7 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 
 /* USER CODE BEGIN STM32TouchController */
 

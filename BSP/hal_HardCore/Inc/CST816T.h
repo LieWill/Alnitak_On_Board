@@ -1,6 +1,7 @@
 #ifndef __CST816T_H_
 #define __CST816T_H_
 #include "i2c.h"
+#include "gpio.h"
 
 #ifdef __cplusplus
 extern "C"

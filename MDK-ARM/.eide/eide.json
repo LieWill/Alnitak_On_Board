@@ -10,11 +10,6 @@
     "files": [],
     "folders": [
       {
-        "name": "::CMSIS",
-        "files": [],
-        "folders": []
-      },
-      {
         "name": "Application",
         "files": [],
         "folders": [
@@ -35,10 +30,16 @@
                 "name": "Core",
                 "files": [
                   {
-                    "path": "../Core/Src/adc.c"
+                    "path": "../Core/Src/main.c"
+                  },
+                  {
+                    "path": "../Core/Src/gpio.c"
                   },
                   {
                     "path": "../Core/Src/app_freertos.c"
+                  },
+                  {
+                    "path": "../Core/Src/adc.c"
                   },
                   {
                     "path": "../Core/Src/crc.c"
@@ -50,16 +51,10 @@
                     "path": "../Core/Src/gpdma.c"
                   },
                   {
-                    "path": "../Core/Src/gpio.c"
-                  },
-                  {
                     "path": "../Core/Src/i2c.c"
                   },
                   {
                     "path": "../Core/Src/icache.c"
-                  },
-                  {
-                    "path": "../Core/Src/main.c"
                   },
                   {
                     "path": "../Core/Src/memorymap.c"
@@ -71,19 +66,19 @@
                     "path": "../Core/Src/spi.c"
                   },
                   {
-                    "path": "../Core/Src/stm32u5xx_hal_msp.c"
+                    "path": "../Core/Src/tim.c"
                   },
                   {
-                    "path": "../Core/Src/stm32u5xx_hal_timebase_tim.c"
+                    "path": "../Core/Src/usart.c"
                   },
                   {
                     "path": "../Core/Src/stm32u5xx_it.c"
                   },
                   {
-                    "path": "../Core/Src/tim.c"
+                    "path": "../Core/Src/stm32u5xx_hal_msp.c"
                   },
                   {
-                    "path": "../Core/Src/usart.c"
+                    "path": "../Core/Src/stm32u5xx_hal_timebase_tim.c"
                   }
                 ],
                 "folders": []
@@ -92,15 +87,6 @@
                 "name": "TouchGFX",
                 "files": [],
                 "folders": [
-                  {
-                    "name": "App",
-                    "files": [
-                      {
-                        "path": "../TouchGFX/App/app_touchgfx.c"
-                      }
-                    ],
-                    "folders": []
-                  },
                   {
                     "name": "target",
                     "files": [
@@ -134,54 +120,21 @@
                         "folders": []
                       }
                     ]
+                  },
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "../TouchGFX/App/app_touchgfx.c"
+                      }
+                    ],
+                    "folders": []
                   }
                 ]
               }
             ]
           }
         ]
-      },
-      {
-        "name": "BSP",
-        "files": [
-          {
-            "path": "../BSP/hal_HardCore/Inc/CST816T.h"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Inc/FUNTION_IMAGE.H"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Inc/LCD_font.h"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Inc/OLED_Font.h"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Inc/OLED.H"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Inc/st7789v.h"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Src/cst816.c"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Src/funtion_image.c"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Src/oled.c"
-          },
-          {
-            "path": "../BSP/hal_HardCore/Src/st7789v.c"
-          },
-          {
-            "path": "../BSP/picture/Inc/MyHead.h"
-          },
-          {
-            "path": "../BSP/picture/Src/MyHead.c"
-          }
-        ],
-        "folders": []
       },
       {
         "name": "Drivers",
@@ -292,112 +245,43 @@
         ]
       },
       {
-        "name": "generated",
+        "name": "BSP",
         "files": [
           {
-            "path": "../touchgfx/generated/fonts/src/applicationfontprovider.cpp"
+            "path": "../BSP/hal_HardCore/Inc/FUNTION_IMAGE.H"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/cachedfont.cpp"
+            "path": "../BSP/hal_HardCore/Inc/LCD_font.h"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp"
+            "path": "../BSP/hal_HardCore/Inc/OLED.H"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp"
+            "path": "../BSP/hal_HardCore/Inc/OLED_Font.h"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp"
+            "path": "../BSP/hal_HardCore/Inc/st7789v.h"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/fontcache.cpp"
+            "path": "../BSP/hal_HardCore/Src/funtion_image.c"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/generatedfont.cpp"
+            "path": "../BSP/hal_HardCore/Src/oled.c"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp"
+            "path": "../BSP/hal_HardCore/Src/st7789v.c"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp"
+            "path": "../BSP/picture/Inc/MyHead.h"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp"
+            "path": "../BSP/picture/Src/MyHead.c"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp"
+            "path": "../BSP/hal_HardCore/Src/cst816.c"
           },
           {
-            "path": "../touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/fonts/src/unmappeddatafont.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/fonts/src/vectorfontrendererbuffers.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/gui_generated/src/common/frontendapplicationbase.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/gui_generated/src/screen1_screen/screen1viewbase.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_textures_seamless_texture_2.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_backgrounds_small_glossy_gradient.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_active.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_rounded_micro_fill_pressed.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_active.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_off_light.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_large_round_on_action.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/bitmapdatabase.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/svgdatabase.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/texts/src/languagegb.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/texts/src/texts.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/texts/src/typedtextdatabase.cpp"
+            "path": "../BSP/hal_HardCore/Inc/CST816T.h"
           }
         ],
         "folders": []
@@ -421,12 +305,155 @@
         "folders": []
       },
       {
+        "name": "generated",
+        "files": [
+          {
+            "path": "../touchgfx/generated/fonts/src/applicationfontprovider.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/bitmapdatabase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/cachedfont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/fontcache.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/gui_generated/src/common/frontendapplicationbase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/generatedfont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_backgrounds_240x240_poly.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_backgrounds_small_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_circleprogress_backgrounds_large.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_circleprogress_backgrounds_medium.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small_action.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_small_off_light.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_small_on_active.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_bluetooth.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_heartbreaking.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_heartbreaking_pressed.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_heartrate.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_scroll1.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_scroll2.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_slider_empty.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_slider_full.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_slider_handle.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_sport_small.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_weather.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/languagegb.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/gui_generated/src/screen1_screen/screen1viewbase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/svgdatabase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/texts.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/texts/src/typedtextdatabase.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/unmappeddatafont.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/fonts/src/vectorfontrendererbuffers.cpp"
+          }
+        ],
+        "folders": []
+      },
+      {
         "name": "Lib",
         "files": [
           {
             "path": "../middlewares/st/touchgfx/lib/core/cortex_m33/Keil6.x/touchgfx_core_wchar16.lib"
           }
         ],
+        "folders": []
+      },
+      {
+        "name": "::CMSIS",
+        "files": [],
         "folders": []
       },
       {

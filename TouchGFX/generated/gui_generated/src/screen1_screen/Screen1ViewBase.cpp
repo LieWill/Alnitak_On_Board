@@ -16,29 +16,38 @@ Screen1ViewBase::Screen1ViewBase()
 
     swipeContainer1.setXY(0, 0);
     swipeContainer1.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_SCROLL1_ID), touchgfx::Bitmap(BITMAP_SCROLL2_ID));
-    swipeContainer1.setPageIndicatorXY(71, 2);
+    swipeContainer1.setPageIndicatorXY(46, 2);
     swipeContainer1.setSwipeCutoff(50);
     swipeContainer1.setEndSwipeElasticWidth(50);
 
-    swipeContainer1Page2.setWidth(240);
-    swipeContainer1Page2.setHeight(280);
+    setting_swipeContainer.setWidth(240);
+    setting_swipeContainer.setHeight(280);
+    image1.setXY(46, 71);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_SETTING_ID));
+    setting_swipeContainer.add(image1);
+
+    swipeContainer1.add(setting_swipeContainer);
+
+    heart_swipeContainer.setWidth(240);
+    heart_swipeContainer.setHeight(280);
     heart.setXY(40, 68);
     heart.setBitmap(touchgfx::Bitmap(BITMAP_HEARTRATE_ID));
-    swipeContainer1Page2.add(heart);
+    heart_swipeContainer.add(heart);
 
-    swipeContainer1.add(swipeContainer1Page2);
+    swipeContainer1.add(heart_swipeContainer);
 
-    swipeContainer1Page1.setWidth(240);
-    swipeContainer1Page1.setHeight(280);
+    clock_swipeContainer.setWidth(240);
+    clock_swipeContainer.setHeight(280);
     analogClock1.setXY(-1, 23);
     analogClock1.setBackground(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_ANALOGCLOCK_BACKGROUNDS_SMALL_PLAIN_DARK_ID, 120, 120);
     analogClock1.setupSecondHand(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_ANALOGCLOCK_HANDS_SMALL_SECOND_PLAIN_DARK_ID, 2, 100);
-    analogClock1.setupMinuteHand(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_ANALOGCLOCK_HANDS_SMALL_MINUTE_PLAIN_DARK_ID, 10, 87);
+    analogClock1.setupMinuteHand(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_ANALOGCLOCK_HANDS_SMALL_MINUTE_PLAIN_DARK_ACCENT_ID, 10, 87);
     analogClock1.setMinuteHandSecondCorrection(false);
     analogClock1.setupHourHand(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_ANALOGCLOCK_HANDS_SMALL_HOUR_PLAIN_DARK_ID, 9, 69);
-    analogClock1.setHourHandMinuteCorrection(false);
-    analogClock1.initializeTime24Hour(10, 10, 0);
-    swipeContainer1Page1.add(analogClock1);
+    analogClock1.setHourHandMinuteCorrection(true);
+    analogClock1.initializeTime24Hour(0, 0, 0);
+    analogClock1.setAnimation(5, touchgfx::EasingEquations::bounceEaseOut);
+    clock_swipeContainer.add(analogClock1);
 
     baretey.setXY(174, 13);
     baretey.setProgressIndicatorPosition(3, 3, 36, 14);
@@ -48,9 +57,9 @@ Screen1ViewBase::Screen1ViewBase()
     baretey.setBitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_IMAGEPROGRESS_STYLED_BATTERIES_BATTERY_SMALL_ACTION_ID);
     baretey.setValue(60);
     baretey.setAnchorAtZero(true);
-    swipeContainer1Page1.add(baretey);
+    clock_swipeContainer.add(baretey);
 
-    bluetoothMenu.setXY(0, 0);
+    bluetoothMenu.setXY(1, -4);
     bluetoothMenu.setup(touchgfx::SlideMenu::SOUTH,
         touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_240X240_POLY_ID),
         touchgfx::Bitmap(BITMAP_BLUETOOTH_ID),
@@ -69,19 +78,19 @@ Screen1ViewBase::Screen1ViewBase()
     slider1.setValue(0);
     bluetoothMenu.add(slider1);
 
-    toggleButton1.setXY(19, 178);
-    toggleButton1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_MEDIUM_ROUND_SMALL_ON_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_MEDIUM_ROUND_SMALL_OFF_LIGHT_ID));
-    bluetoothMenu.add(toggleButton1);
+    bluetoothButton1.setXY(19, 178);
+    bluetoothButton1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_MEDIUM_ROUND_SMALL_ON_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_MEDIUM_ROUND_SMALL_OFF_LIGHT_ID));
+    bluetoothMenu.add(bluetoothButton1);
 
-    swipeContainer1Page1.add(bluetoothMenu);
+    clock_swipeContainer.add(bluetoothMenu);
 
-    swipeContainer1.add(swipeContainer1Page1);
+    swipeContainer1.add(clock_swipeContainer);
 
-    swipeContainer1Page3.setWidth(240);
-    swipeContainer1Page3.setHeight(280);
+    sport_swipeContainer.setWidth(240);
+    sport_swipeContainer.setHeight(280);
     sport.setXY(81, 92);
     sport.setBitmap(touchgfx::Bitmap(BITMAP_SPORT_SMALL_ID));
-    swipeContainer1Page3.add(sport);
+    sport_swipeContainer.add(sport);
 
     circleProgress1.setXY(20, 49);
     circleProgress1.setProgressIndicatorPosition(0, 0, 190, 190);
@@ -95,19 +104,27 @@ Screen1ViewBase::Screen1ViewBase()
     circleProgress1Painter.setColor(touchgfx::Color::getColorFromRGB(254, 189, 23));
     circleProgress1.setPainter(circleProgress1Painter);
     circleProgress1.setValue(60);
-    swipeContainer1Page3.add(circleProgress1);
+    sport_swipeContainer.add(circleProgress1);
 
-    swipeContainer1.add(swipeContainer1Page3);
+    swipeContainer1.add(sport_swipeContainer);
 
-    swipeContainer1Page4.setWidth(240);
-    swipeContainer1Page4.setHeight(280);
-    weather.setXY(19, 48);
+    weather_swipeContainer.setWidth(240);
+    weather_swipeContainer.setHeight(280);
+    weather.setXY(39, 71);
     weather.setBitmap(touchgfx::Bitmap(BITMAP_WEATHER_ID));
-    swipeContainer1Page4.add(weather);
+    weather_swipeContainer.add(weather);
 
-    swipeContainer1.add(swipeContainer1Page4);
+    swipeContainer1.add(weather_swipeContainer);
 
-    swipeContainer1.setSelectedPage(1);
+    alarm_clockContainer.setWidth(240);
+    alarm_clockContainer.setHeight(280);
+    alarm_clock.setXY(46, 60);
+    alarm_clock.setBitmap(touchgfx::Bitmap(BITMAP_ALARM_CLOCK_ID));
+    alarm_clockContainer.add(alarm_clock);
+
+    swipeContainer1.add(alarm_clockContainer);
+
+    swipeContainer1.setSelectedPage(2);
     add(swipeContainer1);
 }
 

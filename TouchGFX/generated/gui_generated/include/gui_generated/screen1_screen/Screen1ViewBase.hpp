@@ -45,20 +45,24 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::SwipeContainer swipeContainer1;
-    touchgfx::Container swipeContainer1Page2;
+    touchgfx::Container setting_swipeContainer;
+    touchgfx::Image image1;
+    touchgfx::Container heart_swipeContainer;
     touchgfx::Image heart;
-    touchgfx::Container swipeContainer1Page1;
+    touchgfx::Container clock_swipeContainer;
     touchgfx::AnalogClock analogClock1;
     touchgfx::ImageProgress baretey;
     touchgfx::SlideMenu bluetoothMenu;
     touchgfx::Slider slider1;
-    touchgfx::ToggleButton toggleButton1;
-    touchgfx::Container swipeContainer1Page3;
+    touchgfx::ToggleButton bluetoothButton1;
+    touchgfx::Container sport_swipeContainer;
     touchgfx::Image sport;
     touchgfx::CircleProgress circleProgress1;
     touchgfx::PainterRGB565 circleProgress1Painter;
-    touchgfx::Container swipeContainer1Page4;
+    touchgfx::Container weather_swipeContainer;
     touchgfx::Image weather;
+    touchgfx::Container alarm_clockContainer;
+    touchgfx::Image alarm_clock;
 
 private:
 

@@ -335,6 +335,9 @@
             "path": "../touchgfx/generated/fonts/src/generatedfont.cpp"
           },
           {
+            "path": "../touchgfx/generated/images/src/image_alarm_clock.cpp"
+          },
+          {
             "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_backgrounds_240x240_poly.cpp"
           },
           {
@@ -344,16 +347,13 @@
             "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp"
           },
           {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp"
+            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark_accent.cpp"
           },
           {
             "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp"
           },
           {
             "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_circleprogress_backgrounds_large.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_circleprogress_backgrounds_medium.cpp"
           },
           {
             "path": "../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_imageprogress_styled_batteries_battery_small.cpp"
@@ -371,12 +371,6 @@
             "path": "../touchgfx/generated/images/src/image_bluetooth.cpp"
           },
           {
-            "path": "../touchgfx/generated/images/src/image_heartbreaking.cpp"
-          },
-          {
-            "path": "../touchgfx/generated/images/src/image_heartbreaking_pressed.cpp"
-          },
-          {
             "path": "../touchgfx/generated/images/src/image_heartrate.cpp"
           },
           {
@@ -384,6 +378,9 @@
           },
           {
             "path": "../touchgfx/generated/images/src/image_scroll2.cpp"
+          },
+          {
+            "path": "../touchgfx/generated/images/src/image_setting.cpp"
           },
           {
             "path": "../touchgfx/generated/images/src/image_slider_empty.cpp"

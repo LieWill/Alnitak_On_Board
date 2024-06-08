@@ -3,7 +3,6 @@
 
 #include "spi.h"
 #include "gpio.h"
-#include "LCD_font.h"
 #include "gpdma.h"
 
 #ifdef __cplusplus
@@ -49,14 +48,9 @@ extern "C"
 
     void LCD_clear(uint16_t Color);
     void LCD_init(uint16_t Scan_dir);
-    void LCD_NewImage(uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color);
-    void LCD_DrawString(uint16_t Xstart, uint16_t Ystart, const char *pString,
-                        sFont *Font, uint16_t Color_Background, uint16_t Color_Foreground);
-    void LCD_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color);
     void LCD_drawImage(const unsigned char *image, int x_start, int y_start, int wide, int hight);
     void LCD_SetWindow(uint16_t Xstart, uint16_t Ystart, uint16_t Xend, uint16_t Yend);
     void spi_setDataLength(int bit);
-    uint16_t RGB888toRGB565(uint16_t B, uint16_t G, uint16_t R);
 
 #ifdef __cplusplus
 }

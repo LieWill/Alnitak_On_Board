@@ -12,16 +12,33 @@
             "Height": 280,
             "SwipeCutoff": 50,
             "ShowPageIndicator": true,
-            "PageIndicatorX": 71,
+            "PageIndicatorX": 46,
             "PageIndicatorY": 2,
             "IndicatorImageNormal": "scroll1.png",
             "IndicatorImageHighlight": "scroll2.png",
             "EndSwipeElasticWidth": 50,
-            "SelectedPage": "swipeContainer1Page1",
+            "SelectedPage": "clock_swipeContainer",
             "Components": [
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page2",
+                "Name": "setting_swipeContainer",
+                "Width": 240,
+                "Height": 280,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "image1",
+                    "X": 46,
+                    "Y": 71,
+                    "Width": 150,
+                    "Height": 150,
+                    "RelativeFilename": "setting.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "heart_swipeContainer",
                 "Width": 240,
                 "Height": 280,
                 "Components": [
@@ -31,14 +48,14 @@
                     "X": 40,
                     "Y": 68,
                     "Width": 160,
-                    "Height": 145,
+                    "Height": 144,
                     "RelativeFilename": "heartrate.png"
                   }
                 ]
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page1",
+                "Name": "clock_swipeContainer",
                 "Width": 240,
                 "Height": 280,
                 "Components": [
@@ -52,18 +69,21 @@
                     "FileNameBackground": "__generated\\alternate_theme_images_widgets_analogclock_backgrounds_small_plain_dark.png",
                     "RotationCenterX": 120,
                     "RotationCenterY": 120,
-                    "Easing": "Back",
+                    "UseAnimation": true,
+                    "Duration": 5,
+                    "Easing": "Bounce",
                     "EasingOption": "Out",
                     "ClockHands": [
                       {
                         "Type": "HourClockHand",
                         "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.png",
                         "RotationCenterX": 9,
-                        "RotationCenterY": 69
+                        "RotationCenterY": 69,
+                        "HourHandMinuteCorrection": true
                       },
                       {
                         "Type": "MinuteClockHand",
-                        "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.png",
+                        "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark_accent.png",
                         "RotationCenterX": 10,
                         "RotationCenterY": 87
                       },
@@ -73,9 +93,7 @@
                         "RotationCenterX": 2,
                         "RotationCenterY": 100
                       }
-                    ],
-                    "InitialHour": 10,
-                    "InitialMinute": 10
+                    ]
                   },
                   {
                     "Type": "ImageProgress",
@@ -99,6 +117,8 @@
                   {
                     "Type": "SlideMenu",
                     "Name": "bluetoothMenu",
+                    "X": 1,
+                    "Y": -4,
                     "Width": 240,
                     "Height": 288,
                     "FileNameBackground": "__generated\\alternate_theme_images_backgrounds_240x240_poly.png",
@@ -131,7 +151,7 @@
                       },
                       {
                         "Type": "ToggleButton",
-                        "Name": "toggleButton1",
+                        "Name": "bluetoothButton1",
                         "X": 19,
                         "Y": 178,
                         "Width": 84,
@@ -146,7 +166,7 @@
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page3",
+                "Name": "sport_swipeContainer",
                 "Width": 240,
                 "Height": 280,
                 "Components": [
@@ -185,18 +205,35 @@
               },
               {
                 "Type": "Container",
-                "Name": "swipeContainer1Page4",
+                "Name": "weather_swipeContainer",
                 "Width": 240,
                 "Height": 280,
                 "Components": [
                   {
                     "Type": "Image",
                     "Name": "weather",
-                    "X": 19,
-                    "Y": 48,
-                    "Width": 200,
-                    "Height": 185,
+                    "X": 39,
+                    "Y": 71,
+                    "Width": 160,
+                    "Height": 147,
                     "RelativeFilename": "weather.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "alarm_clockContainer",
+                "Width": 240,
+                "Height": 280,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "alarm_clock",
+                    "X": 46,
+                    "Y": 60,
+                    "Width": 150,
+                    "Height": 153,
+                    "RelativeFilename": "alarm_clock.png"
                   }
                 ]
               }

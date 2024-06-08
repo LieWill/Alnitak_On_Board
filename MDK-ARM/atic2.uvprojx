@@ -906,6 +906,11 @@
               <FilePath>../touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>image_alarm_clock.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_alarm_clock.cpp</FilePath>
+            </File>
+            <File>
               <FileName>image_alternate_theme_images_backgrounds_240x240_poly.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_backgrounds_240x240_poly.cpp</FilePath>
@@ -921,9 +926,9 @@
               <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_hour_plain_dark.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp</FileName>
+              <FileName>image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark_accent.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__generated/image_alternate_theme_images_widgets_analogclock_hands_small_minute_plain_dark_accent.cpp</FilePath>
             </File>
             <File>
               <FileName>image_alternate_theme_images_widgets_analogclock_hands_small_second_plain_dark.cpp</FileName>
@@ -961,16 +966,6 @@
               <FilePath>../touchgfx/generated/images/src/image_bluetooth.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_heartbreaking.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/image_heartbreaking.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_heartbreaking_pressed.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/image_heartbreaking_pressed.cpp</FilePath>
-            </File>
-            <File>
               <FileName>image_heartrate.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/image_heartrate.cpp</FilePath>
@@ -984,6 +979,11 @@
               <FileName>image_scroll2.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/image_scroll2.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_setting.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/image_setting.cpp</FilePath>
             </File>
             <File>
               <FileName>image_slider_empty.cpp</FileName>

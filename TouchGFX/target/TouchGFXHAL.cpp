@@ -1,23 +1,23 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * File Name          : TouchGFXHAL.cpp
-  ******************************************************************************
-  * This file was created by TouchGFX Generator 4.23.2. This file is only
-  * generated once! Delete this file from your project and re-generate code
-  * using STM32CubeMX or change this file manually to update it.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * File Name          : TouchGFXHAL.cpp
+ ******************************************************************************
+ * This file was created by TouchGFX Generator 4.23.2. This file is only
+ * generated once! Delete this file from your project and re-generate code
+ * using STM32CubeMX or change this file manually to update it.
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2024 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 #include <TouchGFXHAL.hpp>
@@ -27,9 +27,11 @@
 #include "stm32u5xx.h"
 #include "st7789v.h"
 #include <touchgfx/hal/OSWrappers.hpp>
-#include "OLED.H"
+#include "CST816T.H"
 
 using namespace touchgfx;
+
+// extern uint16_t touch = 0, X = 0, Y = 0;
 
 void TouchGFXHAL::initialize()
 {
@@ -164,7 +166,7 @@ extern "C" void touchgfxTickHandler()
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
     /* USER CODE BEGIN Callback 0 */
-    static int cot = 10;
+    // static int cot = 0;
     /* USER CODE END Callback 0 */
     if (htim->Instance == TIM6)
     {
@@ -172,7 +174,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     }
     else if (htim->Instance == TIM1)
     {
-
         touchgfxTickHandler();
     }
     /* USER CODE BEGIN Callback 1 */
